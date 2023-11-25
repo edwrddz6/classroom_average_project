@@ -22,7 +22,7 @@ const studentData = [
         name: "Richard Starkey",
         address: "10 Admiral Grove",
         averageGrade: 80,
-    },
-]
+    }
+];
 
 export default studentData;
