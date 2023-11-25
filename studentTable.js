@@ -43,20 +43,20 @@ function renderStudentTable(table, data) {
 }
 
 function updateGrade(input) {
-    const dataIndex = input.getAttribute('data-index');
-    const newGrade = parseFloat(input.value);
+    if (input instanceof HTMLElement) {
+        const dataIndex = input.getAttribute('data-index');
+        const newGrade = parseFloat(input.value);
 
-    if (dataIndex !== null && !isNaN(newGrade)) {
-        studentData[dataIndex].averageGrade = newGrade;
+        if (dataIndex !== null && !isNaN(newGrade)) {
+            studentData[dataIndex].averageGrade = newGrade;
 
-        const newClassroomAverage = calculateClassroomAverage(studentData);
-        
-        document.getElementById('classroomAverage').textContent = newClassroomAverage;
-        
-        console.log('Updated Student Data:', studentData);
-        console.log('Classroom Average:', newClassroomAverage);
-    } else {
-        console.error('Invalid grade');
+            const newClassroomAverage = calculateClassroomAverage(studentData);
+
+            document.getElementById('classroomAverage').textContent = 'Classroom Average Grade: ' + newClassroomAverage.toFixed(2);
+
+            console.log('Updated Student Data:', studentData);
+            console.log('Classroom Average:', newClassroomAverage);
+        } 
     }
 }
 
