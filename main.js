@@ -12,4 +12,4 @@ inputs.forEach(input => {
 
 const classroomAverageElement = document.getElementById('classroomAverage');
 const classroomAverage = calculateClassroomAverage(studentData);
-classroomAverageElement.textContent = classroomAverage.toFixed(2);
+classroomAverageElement.textContent = 'Classroom Average Grade: ' + classroomAverage.toFixed(2);
