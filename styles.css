@@ -1,28 +1,48 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  #student-table #classroomAverage {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  #student-table th {
-    border: 1px solid #dedede;
-    padding: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #6f04a9;
-    color: white;
-  }
-  
-  #student-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #student-table tr:hover {
-    background-color: #ddd;
-  }
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+#student-table {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#student-table #classroomAverage,
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#student-table td,
+#student-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+#student-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+}
+
+#student-table tr:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+#student-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #103ce7;
+  color: white;
+  background-image: linear-gradient(to bottom, #103ce7, #64e9ff);
+}
