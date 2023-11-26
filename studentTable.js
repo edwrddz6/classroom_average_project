@@ -4,11 +4,11 @@ import { calculateClassroomAverage } from './calculateClassroomAverage.js';
 
 //////////////////////////////////////////////////////////////////////////////////
 
-function renderStudentTable(table, data) {
+function renderStudentTable(table, studentData) {
     const tableElement = table;
 
-    for (let i = 0; i < data.length; i++) {
-        const student = data[i];
+    for (let i = 0; i < studentData.length; i++) {
+        const student = studentData[i];
 
         const row = document.createElement('tr');
 
